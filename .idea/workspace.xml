@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="OSM_A_star_search" targetName="pugixml" />
+      <config projectName="OSM_A_star_search" targetName="test" />
+      <config projectName="OSM_A_star_search" targetName="gmock_main" />
+      <config projectName="OSM_A_star_search" targetName="OSM_A_star_search" />
+      <config projectName="OSM_A_star_search" targetName="gtest" />
+      <config projectName="OSM_A_star_search" targetName="gtest_main" />
+      <config projectName="OSM_A_star_search" targetName="gmock" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" GENERATION_DIR="build" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="da6bcd53-123c-4d5e-875c-ac744b73e2b9" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bPs5pjDpoLvCIKvlhdd8oJSVqg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+  </component>
+  <component name="RunManager" selected="Google Test.RoutePlannerTest.TestCalculateHValue">
+    <configuration name="RoutePlannerTest.TestAddNeighbors" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OSM_A_star_search" TARGET_NAME="test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OSM_A_star_search" RUN_TARGET_NAME="test" TEST_CLASS="RoutePlannerTest" TEST_METHOD="TestAddNeighbors" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoutePlannerTest.TestCalculateHValue" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OSM_A_star_search" TARGET_NAME="test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OSM_A_star_search" RUN_TARGET_NAME="test" TEST_CLASS="RoutePlannerTest" TEST_METHOD="TestCalculateHValue" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OSM_A_star_search" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OSM_A_star_search" TARGET_NAME="OSM_A_star_search" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OSM_A_star_search" RUN_TARGET_NAME="OSM_A_star_search">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OSM_A_star_search" TARGET_NAME="gmock" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock_main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OSM_A_star_search" TARGET_NAME="gmock_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OSM_A_star_search" TARGET_NAME="gtest" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OSM_A_star_search" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pugixml" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OSM_A_star_search" TARGET_NAME="pugixml" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.OSM_A_star_search" />
+      <item itemvalue="CMake Application.gmock" />
+      <item itemvalue="CMake Application.gmock_main" />
+      <item itemvalue="CMake Application.gtest" />
+      <item itemvalue="CMake Application.gtest_main" />
+      <item itemvalue="CMake Application.pugixml" />
+      <item itemvalue="Google Test.RoutePlannerTest.TestAddNeighbors" />
+      <item itemvalue="Google Test.RoutePlannerTest.TestCalculateHValue" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Google Test.RoutePlannerTest.TestCalculateHValue" />
+        <item itemvalue="Google Test.RoutePlannerTest.TestAddNeighbors" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="da6bcd53-123c-4d5e-875c-ac744b73e2b9" name="Default Changelist" comment="" />
+      <created>1588544882877</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588544882877</updated>
+      <workItem from="1588544888747" duration="986000" />
+      <workItem from="1588545898513" duration="16110000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="738" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588554593582">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="738" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588554593582" />
+    <state width="495" height="506" key="DebuggerActiveHint" timestamp="1588550863788">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="495" height="506" key="DebuggerActiveHint/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588550863788" />
+    <state width="2514" height="350" key="GridCell.Tab.-1.bottom" timestamp="1588550594706">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="2514" height="350" key="GridCell.Tab.-1.bottom/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588550594706" />
+    <state width="2514" height="350" key="GridCell.Tab.-1.center" timestamp="1588550594706">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="2514" height="350" key="GridCell.Tab.-1.center/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588550594706" />
+    <state width="2485" height="520" key="GridCell.Tab.-1.left" timestamp="1588550712774">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="2485" height="520" key="GridCell.Tab.-1.left/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588550712774" />
+    <state width="2514" height="350" key="GridCell.Tab.-1.right" timestamp="1588550594706">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="2514" height="350" key="GridCell.Tab.-1.right/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588550594706" />
+    <state width="2514" height="350" key="GridCell.Tab.0.bottom" timestamp="1588641842702">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="2514" height="350" key="GridCell.Tab.0.bottom/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588641842702" />
+    <state width="2514" height="350" key="GridCell.Tab.0.center" timestamp="1588641842702">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="2514" height="350" key="GridCell.Tab.0.center/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588641842702" />
+    <state width="2514" height="350" key="GridCell.Tab.0.left" timestamp="1588641842702">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="2514" height="350" key="GridCell.Tab.0.left/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588641842702" />
+    <state width="2514" height="350" key="GridCell.Tab.0.right" timestamp="1588641842702">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="2514" height="350" key="GridCell.Tab.0.right/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588641842702" />
+    <state x="341" y="215" width="2514" height="350" key="GridCell.Tab.1.bottom" timestamp="1588641842702">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="341" y="215" width="2514" height="350" key="GridCell.Tab.1.bottom/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588641842702" />
+    <state x="341" y="215" width="2514" height="350" key="GridCell.Tab.1.center" timestamp="1588641842702">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="341" y="215" width="2514" height="350" key="GridCell.Tab.1.center/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588641842702" />
+    <state x="341" y="215" width="2514" height="350" key="GridCell.Tab.1.left" timestamp="1588641842702">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="341" y="215" width="2514" height="350" key="GridCell.Tab.1.left/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588641842702" />
+    <state x="341" y="215" width="2514" height="350" key="GridCell.Tab.1.right" timestamp="1588641842702">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="341" y="215" width="2514" height="350" key="GridCell.Tab.1.right/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588641842702" />
+    <state x="341" y="215" width="2514" height="350" key="GridCell.Tab.2.bottom" timestamp="1588550725814">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="341" y="215" width="2514" height="350" key="GridCell.Tab.2.bottom/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588550725814" />
+    <state x="341" y="215" width="2514" height="350" key="GridCell.Tab.2.center" timestamp="1588550725814">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="341" y="215" width="2514" height="350" key="GridCell.Tab.2.center/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588550725814" />
+    <state x="341" y="215" width="2514" height="350" key="GridCell.Tab.2.left" timestamp="1588550725814">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="341" y="215" width="2514" height="350" key="GridCell.Tab.2.left/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588550725814" />
+    <state x="341" y="215" width="2514" height="350" key="GridCell.Tab.2.right" timestamp="1588550725814">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="341" y="215" width="2514" height="350" key="GridCell.Tab.2.right/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588550725814" />
+    <state x="592" y="465" width="2485" height="520" key="GridCell.Tab.3.bottom" timestamp="1588550681313">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="592" y="465" width="2485" height="520" key="GridCell.Tab.3.bottom/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588550681313" />
+    <state x="592" y="465" width="2485" height="520" key="GridCell.Tab.3.center" timestamp="1588550681313">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="592" y="465" width="2485" height="520" key="GridCell.Tab.3.center/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588550681313" />
+    <state x="592" y="465" width="2485" height="520" key="GridCell.Tab.3.left" timestamp="1588550681312">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="592" y="465" width="2485" height="520" key="GridCell.Tab.3.left/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588550681312" />
+    <state x="592" y="465" width="2485" height="520" key="GridCell.Tab.3.right" timestamp="1588550681313">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="592" y="465" width="2485" height="520" key="GridCell.Tab.3.right/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588550681313" />
+    <state x="23" y="686" width="2485" height="322" key="GridCell.Tab.4.bottom" timestamp="1588550665980">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="23" y="686" width="2485" height="322" key="GridCell.Tab.4.bottom/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588550665980" />
+    <state x="23" y="686" width="2485" height="322" key="GridCell.Tab.4.center" timestamp="1588550665979">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="23" y="686" width="2485" height="322" key="GridCell.Tab.4.center/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588550665979" />
+    <state x="23" y="686" width="2514" height="350" key="GridCell.Tab.4.left" timestamp="1588550713009">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="23" y="686" width="2514" height="350" key="GridCell.Tab.4.left/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588550713009" />
+    <state x="23" y="686" width="2485" height="322" key="GridCell.Tab.4.right" timestamp="1588550665980">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="23" y="686" width="2485" height="322" key="GridCell.Tab.4.right/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588550665980" />
+    <state x="-336" y="592" width="2485" height="322" key="GridCell.Tab.5.bottom" timestamp="1588550620487">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="-336" y="592" width="2485" height="322" key="GridCell.Tab.5.bottom/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588550620487" />
+    <state x="-336" y="592" width="2485" height="322" key="GridCell.Tab.5.center" timestamp="1588550620487">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="-336" y="592" width="2485" height="322" key="GridCell.Tab.5.center/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588550620487" />
+    <state x="-336" y="592" width="2485" height="322" key="GridCell.Tab.5.left" timestamp="1588550620487">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="-336" y="592" width="2485" height="322" key="GridCell.Tab.5.left/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588550620487" />
+    <state x="-336" y="592" width="2485" height="322" key="GridCell.Tab.5.right" timestamp="1588550620487">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="-336" y="592" width="2485" height="322" key="GridCell.Tab.5.right/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588550620487" />
+    <state x="697" y="214" width="1193" height="737" key="SettingsEditor" timestamp="1588642160240">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="697" y="214" width="1193" height="737" key="SettingsEditor/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588642160240" />
+    <state x="-336" y="592" width="2485" height="359" key="dock-window-1" timestamp="1588550659719">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="-336" y="592" width="2485" height="359" key="dock-window-1/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588550659719" />
+    <state x="592" y="465" width="2485" height="557" key="dock-window-2" timestamp="1588551151482">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="592" y="465" width="2485" height="557" key="dock-window-2/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588551151482" />
+    <state x="3" y="273" width="2514" height="387" key="dock-window-3" timestamp="1588551151482">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="3" y="273" width="2514" height="387" key="dock-window-3/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588551151482" />
+    <state x="943" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1588641932624">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="943" y="239" width="672" height="678" key="search.everywhere.popup/2560.0.1600.900/0.27.2560.1053@0.27.2560.1053" timestamp="1588641932624" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/test/utest_rp_a_star_search.cpp</url>
+          <line>42</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/test/utest_rp_a_star_search.cpp</url>
+          <line>65</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/test/utest_rp_a_star_search.cpp</url>
+          <line>61</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/route_planner.cpp</url>
+          <line>24</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
