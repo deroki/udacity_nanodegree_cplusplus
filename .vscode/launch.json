@@ -24,6 +24,27 @@
             ],
             "preLaunchTask": "debug",
             "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "OSMapp",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/OSM_A_star_search",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build/",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "debug",
+            "miDebuggerPath": "/usr/bin/gdb"
         }
     ]
 }
