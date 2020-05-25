@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../include/linux_parser.h
+fstream
+-
+regex
+-
+string
+-
+
+/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/CppND-System-Monitor/test/parser.cpp
+linux_parser.h
+/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/CppND-System-Monitor/test/linux_parser.h
+iostream
+-
+
