@@ -13,6 +13,9 @@ int main()
       std::cout << proc.Pid() << ",";
     }
     std::cout << "\n";
+    std::cout << "running processes  " << mysystem.RunningProcesses() << "\n";
+    std::cout << "total processes  " << mysystem.TotalProcesses() << "\n";
+    std::cout << "uptime  " << mysystem.UpTime() << "\n";
     
     Processor myprocessor;
     std::vector<long> myvect  = myprocessor.getProcessUseVector();
