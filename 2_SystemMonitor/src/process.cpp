@@ -31,7 +31,8 @@ string Process::Ram() {
 }
 
 string Process::User() {
-  return LinuxParser::User(_pid); 
+  int uid = std::stoi(LinuxParser::Uid(_pid));
+  return LinuxParser::User(uid); 
 }
 
 long int Process::UpTime() {
@@ -39,5 +40,5 @@ long int Process::UpTime() {
 }
 
 bool Process::operator<(Process const& a) const { 
-    return this->CpuUtilization() < a.CpuUtilization();
+    return a.CpuUtilization() < this->CpuUtilization();
  }

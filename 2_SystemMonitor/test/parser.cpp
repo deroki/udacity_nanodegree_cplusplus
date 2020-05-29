@@ -2,6 +2,7 @@
 #include "processor.h"
 #include "system.h"
 #include "process.h"
+#include "format.h"
 #include <iostream>
 
 #define PROC_NUM  1421  
@@ -16,6 +17,7 @@ int main()
     std::cout << "running processes  " << mysystem.RunningProcesses() << "\n";
     std::cout << "total processes  " << mysystem.TotalProcesses() << "\n";
     std::cout << "uptime  " << mysystem.UpTime() << "\n";
+    std::cout << "formateduptime  " << Format::ElapsedTime(mysystem.UpTime()) << "\n";
     
     Processor myprocessor;
     std::vector<long> myvect  = myprocessor.getProcessUseVector();
