@@ -150,6 +150,33 @@ home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/lin
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/linux_parser.cpp.s
 .PHONY : home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/linux_parser.cpp.s
 
+home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.o: home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.o
+
+.PHONY : home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.o
+
+# target to build an object file
+home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.o
+.PHONY : home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.o
+
+home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.i: home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.i
+
+.PHONY : home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.i
+
+# target to preprocess a source file
+home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.i
+.PHONY : home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.i
+
+home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.s: home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.s
+
+.PHONY : home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.s
+
+# target to generate assembly for a file
+home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.s
+.PHONY : home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.s
+
 home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/processor.o: home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/processor.cpp.o
 
 .PHONY : home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/processor.o
@@ -176,6 +203,33 @@ home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/pro
 home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/processor.cpp.s:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/processor.cpp.s
 .PHONY : home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/processor.cpp.s
+
+home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.o: home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.o
+
+.PHONY : home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.o
+
+# target to build an object file
+home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.o
+.PHONY : home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.o
+
+home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.i: home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.i
+
+.PHONY : home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.i
+
+# target to preprocess a source file
+home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.i
+.PHONY : home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.i
+
+home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.s: home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.s
+
+.PHONY : home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.s
+
+# target to generate assembly for a file
+home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.s
+.PHONY : home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.s
 
 parser.o: parser.cpp.o
 
@@ -216,9 +270,15 @@ help:
 	@echo "... home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/linux_parser.o"
 	@echo "... home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/linux_parser.i"
 	@echo "... home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/linux_parser.s"
+	@echo "... home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.o"
+	@echo "... home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.i"
+	@echo "... home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.s"
 	@echo "... home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/processor.o"
 	@echo "... home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/processor.i"
 	@echo "... home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/processor.s"
+	@echo "... home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.o"
+	@echo "... home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.i"
+	@echo "... home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.s"
 	@echo "... parser.o"
 	@echo "... parser.i"
 	@echo "... parser.s"

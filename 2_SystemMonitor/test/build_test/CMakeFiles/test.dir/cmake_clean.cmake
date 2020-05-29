@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/linux_parser.cpp.o"
+  "CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.o"
   "CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/processor.cpp.o"
+  "CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.o"
   "CMakeFiles/test.dir/parser.cpp.o"
   "test"
   "test.pdb"

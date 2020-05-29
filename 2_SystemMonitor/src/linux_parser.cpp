@@ -121,22 +121,127 @@ int LinuxParser::TotalProcesses() { return 0; }
 // TODO: Read and return the number of running processes
 int LinuxParser::RunningProcesses() { return 0; }
 
-// TODO: Read and return the command associated with a process
-// REMOVE: [[maybe_unused]] once you define the function
-string LinuxParser::Command(int pid[[maybe_unused]]) { return string(); }
+float LinuxParser::CpuUtilizationProcess(int pid){
+  std::string line, value;
+  int utime, stime, cutime, cstime, startime;
+  std::ifstream fs(kProcDirectory +std::to_string(pid) + kStatFilename);
+  if (fs.is_open()){
+    std::getline(fs,line);
+    std::istringstream ss(line);
+    int i{1};             //we start counting on 1
+    while(ss >> value){
+      switch (i)
+      {
+      case 14:
+        utime = std::stoi(value);
+        break;
+      case 15:
+        stime = std::stoi(value);
+        break;
+      case 16:
+        cutime = std::stoi(value);
+        break;
+      case 17:
+        cstime = std::stoi(value);
+        break;
+      case 22:
+        startime = std::stoi(value);
+        break;
 
-// TODO: Read and return the memory used by a process
-// REMOVE: [[maybe_unused]] once you define the function
-string LinuxParser::Ram(int pid[[maybe_unused]]) { return string(); }
+      default:
+        break;
+      }
+    i++;
+    }
+  }
+  int hertz = sysconf(_SC_CLK_TCK);
+  int uptime = UpTime();
+  int totaltime = utime + stime  + cutime + cstime; 
+  float secs = (float)uptime - ((float)startime/(float)hertz);
+  float cpuUsage = (100.0f * ((float)totaltime / (float)hertz))/secs;
 
-// TODO: Read and return the user ID associated with a process
-// REMOVE: [[maybe_unused]] once you define the function
-string LinuxParser::Uid(int pid[[maybe_unused]]) { return string(); }
+  return cpuUsage;
+}
 
-// TODO: Read and return the user associated with a process
-// REMOVE: [[maybe_unused]] once you define the function
-string LinuxParser::User(int pid[[maybe_unused]]) { return string(); }
+string LinuxParser::Command(int pid[[maybe_unused]]) {
+  std::string line;
+  std::ifstream fs(kProcDirectory + std::to_string(pid) + kCmdlineFilename);
+  if (fs.is_open()){
+    fs >> line;
+    return line;
+  }
+  return "";
+}
 
-// TODO: Read and return the uptime of a process
-// REMOVE: [[maybe_unused]] once you define the function
-long LinuxParser::UpTime(int pid[[maybe_unused]]) { return 0; }
+string LinuxParser::Ram(int pid) {
+  std::string line, type, ram, ignore;
+  std::ifstream fileStream(kProcDirectory + std::to_string(pid) + kStatusFilename);
+  if (fileStream.is_open()){
+    while(std::getline(fileStream, line)){
+      if(line.substr(0,7) == "VmSize:"){
+        std::stringstream ss(line);
+        ss >> type >> ram >> ignore;
+        return ram;
+      }
+      }
+      }
+  return "";  
+}
+
+string LinuxParser::Uid(int pid) {
+  std::string line, type, uid;
+  std::ifstream fileStream(kProcDirectory + std::to_string(pid) + kStatusFilename);
+  if (fileStream.is_open()){
+    while(std::getline(fileStream, line)){
+      if(line.substr(0,4) == "Uid:"){
+        std::stringstream ss(line);
+        ss >> type >> uid;
+        return uid;  
+      }
+      }
+      }
+  return "";  
+}
+
+string LinuxParser::User(int pid) {
+  std::string line, ignore, uid,  name;
+  std::ifstream fs("/etc/passwd");
+  if (fs.is_open()){
+    while(std::getline(fs, line)){
+      std::istringstream ss(line);
+      while(std::getline(ss, name, ':')){
+        std::getline(ss, ignore, ':');
+        std::getline(ss, uid, ':');
+        if (uid == to_string(pid)){
+          return name;
+        }
+      }
+    }
+;  }
+  return ""; 
+}
+
+long LinuxParser::UpTime(int pid) {
+  std::string line, value;
+  long starttime, uptime;
+  std::ifstream fs(kProcDirectory +std::to_string(pid) + kStatFilename);
+  if (fs.is_open()){
+    std::getline(fs,line);
+    std::istringstream ss(line);
+    int i{1};             //we start counting on 1
+    while(ss >> value){
+      switch (i)
+      {
+      case 22:
+        starttime = std::stoi(value);
+        break;
+
+      default:
+        break;
+      }
+    i++;
+    }
+  }
+  uptime = starttime/sysconf(_SC_CLK_TCK);
+  return uptime;
+}

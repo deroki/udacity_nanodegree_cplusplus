@@ -96,11 +96,39 @@ CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_S
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/processor.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/processor.cpp -o CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/processor.cpp.s
 
+CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.o: /home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/test/build_test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.o -c /home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp
+
+CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp > CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.i
+
+CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp -o CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.s
+
+CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.o: /home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/test/build_test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.o -c /home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp
+
+CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp > CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.i
+
+CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp -o CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.s
+
 # Object files for target test
 test_OBJECTS = \
 "CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/linux_parser.cpp.o" \
 "CMakeFiles/test.dir/parser.cpp.o" \
-"CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/processor.cpp.o"
+"CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/processor.cpp.o" \
+"CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.o" \
+"CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
@@ -108,9 +136,11 @@ test_EXTERNAL_OBJECTS =
 test: CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/linux_parser.cpp.o
 test: CMakeFiles/test.dir/parser.cpp.o
 test: CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/processor.cpp.o
+test: CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/system.cpp.o
+test: CMakeFiles/test.dir/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/src/process.cpp.o
 test: CMakeFiles/test.dir/build.make
 test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/test/build_test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/carlos/Desktop/openmap/CppND-Route-Planning-Project/2_SystemMonitor/test/build_test/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
