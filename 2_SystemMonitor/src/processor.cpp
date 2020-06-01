@@ -1,6 +1,5 @@
 #include "processor.h"
 #include "linux_parser.h"
-// TODO: Return the aggregate CPU utilization
 
 using namespace LinuxParser;
 
@@ -49,5 +48,5 @@ float Processor::Utilization() {
   parseProcessUseVector();
   total = getTotal();
   idle = getIdle();
-     return (float)((total - total_0)- (idle - idle_0)) / float(total - total_0);
+     return static_cast<float>((total - total_0)- (idle - idle_0)) / static_cast<float>(total - total_0);   //REVIEW: static_cast<float> better than (float)
       }

@@ -21,7 +21,7 @@ vector<Process>& System::Processes() {
   processes_.clear();
   for (auto num : pids){
     Process process(num);
-    processes_.push_back(process);
+    processes_.emplace_back(process);       //emplace best than push_back!
   }
   std::sort(processes_.begin(), processes_.end());
   return processes_; 

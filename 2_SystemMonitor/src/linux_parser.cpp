@@ -76,8 +76,8 @@ float LinuxParser::MemoryUtilization() {
     while(std::getline(fileStream, line)){
       std::istringstream lineString(line);
       lineString >> key >> value;
-      if ( key == "MemTotal:") { MemTotal = std::stof(value);}
-      if ( key == "MemFree:") { MemFree = std::stof(value); break;}
+      if ( key == kMemTotal) { MemTotal = std::stof(value);}
+      if ( key == kMemFree) { MemFree = std::stof(value); break;}
     }
     MemUtilization = (MemTotal - MemFree)/MemTotal;
   }
@@ -115,7 +115,7 @@ int LinuxParser::TotalProcesses() {
   std::ifstream fs(kProcDirectory + kStatFilename);
   if (fs.is_open()){
     while(std::getline(fs,line)){
-      if (line.substr(0,9) == "processes"){
+      if (line.substr(0,9) == kProcesses){
         std::istringstream ss(line);
         ss >> ignore >> value;
         try{
@@ -136,7 +136,7 @@ int LinuxParser::RunningProcesses() {
   std::ifstream fs(kProcDirectory + kStatFilename);
   if (fs.is_open()){
     while(std::getline(fs,line)){
-      if (line.substr(0,13) == "procs_running"){
+      if (line.substr(0,13) == kProcsRunning){
         std::istringstream ss(line);
         ss >> ignore >> value;
         return std::stoi(value);
@@ -193,6 +193,9 @@ string LinuxParser::Command(int pid[[maybe_unused]]) {
   std::ifstream fs(kProcDirectory + std::to_string(pid) + kCmdlineFilename);
   if (fs.is_open()){
     fs >> line;
+    if(line.size() > 40){
+      line = line.substr(0,40) + "...";
+    }
     return line;
   }
   return nullptr;
@@ -204,7 +207,7 @@ string LinuxParser::Ram(int pid) {
   std::ifstream fileStream(kProcDirectory + std::to_string(pid) + kStatusFilename);
   if (fileStream.is_open()){
     while(std::getline(fileStream, line)){
-      if(line.substr(0,7) == "VmData:"){          // I have used VmData instead of VmSize as recommended by the udacity guidelines
+      if(line.substr(0,7) == kVmData){          // I have used VmData instead of VmSize as recommended by the udacity guidelines
         std::stringstream ss(line);       
         ss >> type >> ram_int >> ignore;
         ram = std::to_string(ram_int/1024);
