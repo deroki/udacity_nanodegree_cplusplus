@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include <string>
 #include <vector>
+#include <iostream>
 
 #include "linux_parser.h"
 
@@ -83,7 +84,6 @@ float LinuxParser::MemoryUtilization() {
   return MemUtilization; 
   }
 
-// TODO: Read and return the system uptime
 long LinuxParser::UpTime() {
   string line;
   long uptime, idle;
@@ -96,26 +96,20 @@ long LinuxParser::UpTime() {
   return uptime; 
   }
 
-// TODO: Read and return the number of jiffies for the system
 long LinuxParser::Jiffies(){
   long ticks = sysconf(_SC_CLK_TCK);
   return ticks * UpTime();
 }
 
-// TODO: Read and return the number of active jiffies for a PID
-// REMOVE: [[maybe_unused]] once you define the function
+
 long LinuxParser::ActiveJiffies(int pid[[maybe_unused]]) { return 0; }
 
-// TODO: Read and return the number of active jiffies for the system
 long LinuxParser::ActiveJiffies() { return 0; }
 
-// TODO: Read and return the number of idle jiffies for the system
 long LinuxParser::IdleJiffies() { return 0; }
 
-// TODO: Read and return CPU utilization
 vector<string> LinuxParser::CpuUtilization() { return {}; }
 
-// TODO: Read and return the total number of processes
 int LinuxParser::TotalProcesses() {
   std::string line, ignore, value;
   std::ifstream fs(kProcDirectory + kStatFilename);
@@ -124,14 +118,19 @@ int LinuxParser::TotalProcesses() {
       if (line.substr(0,9) == "processes"){
         std::istringstream ss(line);
         ss >> ignore >> value;
-        return std::stoi(value);
+        try{
+          return std::stoi(value);
+        }
+        catch(const std::invalid_argument){
+          std::cout << "Invalid argument CpuUtilization" << std::endl;
+          return 0;
+        }
       }
     }
   }
   return 0;
 }
 
-// TODO: Read and return the number of running processes
 int LinuxParser::RunningProcesses() {
   std::string line, ignore, value;
   std::ifstream fs(kProcDirectory + kStatFilename);
@@ -184,7 +183,7 @@ float LinuxParser::CpuUtilizationProcess(int pid){
   int uptime = UpTime();
   int totaltime = utime + stime  + cutime + cstime; 
   float secs = (float)uptime - ((float)startime/(float)hertz);
-  float cpuUsage = (100.0f * ((float)totaltime / (float)hertz))/secs;
+  float cpuUsage = (((float)totaltime / (float)hertz))/secs;
 
   return cpuUsage;
 }
@@ -196,22 +195,24 @@ string LinuxParser::Command(int pid[[maybe_unused]]) {
     fs >> line;
     return line;
   }
-  return "";
+  return nullptr;
 }
 
 string LinuxParser::Ram(int pid) {
   std::string line, type, ram, ignore;
+  int ram_int;
   std::ifstream fileStream(kProcDirectory + std::to_string(pid) + kStatusFilename);
   if (fileStream.is_open()){
     while(std::getline(fileStream, line)){
-      if(line.substr(0,7) == "VmSize:"){
-        std::stringstream ss(line);
-        ss >> type >> ram >> ignore;
+      if(line.substr(0,7) == "VmData:"){          // I have used VmData instead of VmSize as recommended by the udacity guidelines
+        std::stringstream ss(line);       
+        ss >> type >> ram_int >> ignore;
+        ram = std::to_string(ram_int/1024);
         return ram;
       }
       }
       }
-  return "";  
+  return nullptr;  
 }
 
 string LinuxParser::Uid(int pid) {
@@ -226,7 +227,7 @@ string LinuxParser::Uid(int pid) {
       }
       }
       }
-  return "";  
+  return nullptr;  
 }
 
 string LinuxParser::User(int pid) {
@@ -244,7 +245,7 @@ string LinuxParser::User(int pid) {
       }
     }
 ;  }
-  return ""; 
+  return nullptr; 
 }
 
 long LinuxParser::UpTime(int pid) {
@@ -260,14 +261,12 @@ long LinuxParser::UpTime(int pid) {
       {
       case 22:
         starttime = std::stoi(value);
-        break;
-
+        uptime = UpTime() - starttime/sysconf(_SC_CLK_TCK);
+        return uptime;
       default:
         break;
       }
     i++;
     }
   }
-  uptime = starttime/sysconf(_SC_CLK_TCK);
-  return uptime;
 }
