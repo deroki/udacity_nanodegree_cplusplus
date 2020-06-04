@@ -1,0 +1,12 @@
+{
+  "tasks": [
+    {
+
+      "label": "make membot",
+      "type": "shell",
+      "command": "make",
+      "options": {"cwd": "${workspaceFolder}/build"}
+  }
+  ],
+  "version": "2.0.0"
+}
