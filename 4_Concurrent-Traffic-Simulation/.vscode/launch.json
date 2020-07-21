@@ -12,7 +12,7 @@
       "program": "${workspaceFolder}/build/traffic_simulation",
       "args": [],
       "stopAtEntry": false,
-      "cwd": "${workspaceFolder}",
+      "cwd": "${workspaceFolder}/src",
       "environment": [],
       "externalConsole": false,
       "MIMode": "gdb",
